@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bunyah | Business &amp; Data Consulting</title>
+    <meta
+      name="description"
+      content="Bunyah is a business and data consulting agency helping teams build structure, improve performance, and turn strategy into measurable execution."
+    />
+    <meta property="og:title" content="Bunyah | Business &amp; Data Consulting" />
+    <meta
+      property="og:description"
+      content="The structure behind your growth. Diagnosis-first, data-informed, implementation-focused consulting."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bunyah | Business &amp; Data Consulting" />
+    <meta
+      name="twitter:description"
+      content="Business and data consulting for clarity, execution, and sustained growth."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind = {
+        config: {
+          darkMode: 'class',
+          theme: {
+            extend: {
+              colors: {
+                parchment: '#EAE5D8',
+                ink: '#1B2A3C',
+                brass: '#A6824A',
+                shell: '#F7F4EC'
+              },
+              fontFamily: {
+                display: ['Fraunces', 'serif'],
+                body: ['Cairo', 'sans-serif']
+              },
+              boxShadow: {
+                soft: '0 12px 32px rgba(27,42,60,0.08)'
+              }
+            }
+          }
+        }
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @media (prefers-reduced-motion: reduce) {
+        html:focus-within {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Bunyah",
+        "url": "https://example.com",
+        "email": "bunyah.co@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Cairo",
+          "addressCountry": "Egypt"
+        },
+        "sameAs": []
+      }
+    </script>
+  </head>
+  <body class="bg-parchment text-ink font-body antialiased dark:bg-ink dark:text-shell">
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-md focus:bg-ink focus:px-4 focus:py-2 focus:text-shell"
+      >Skip to main content</a
+    >
+
+    <header class="sticky top-0 z-50 border-b border-ink/15 bg-parchment/95 backdrop-blur dark:border-shell/20 dark:bg-ink/90">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+        <a href="#" class="group inline-flex items-center gap-3">
+          <span
+            class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-ink/20 bg-shell text-lg font-display font-semibold text-ink dark:border-shell/30 dark:bg-ink dark:text-shell"
+            aria-hidden="true"
+            >ب</span
+          >
+          <span class="flex flex-col">
+            <span class="font-display text-xl leading-none tracking-tight">Bunyah</span>
+            <span class="text-xs uppercase tracking-[0.2em] text-ink/70 dark:text-shell/70">Business &amp; Data Consulting</span>
+          </span>
+        </a>
+
+        <button
+          id="mobile-menu-button"
+          type="button"
+          class="inline-flex items-center justify-center rounded-md border border-ink/20 p-2 text-ink hover:bg-shell focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass md:hidden dark:border-shell/30 dark:text-shell dark:hover:bg-shell/10"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          aria-label="Open navigation menu"
+        >
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+
+        <nav class="hidden items-center gap-8 md:flex" aria-label="Primary navigation">
+          <a class="text-sm font-medium hover:text-brass focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass" href="#services">Services</a>
+          <a class="text-sm font-medium hover:text-brass focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass" href="#process">Process</a>
+          <a class="text-sm font-medium hover:text-brass focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass" href="#about">About</a>
+          <a class="text-sm font-medium hover:text-brass focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass" href="#contact">Contact</a>
+        </nav>
+
+        <div class="hidden items-center gap-3 md:flex">
+          <button
+            id="theme-toggle"
+            type="button"
+            class="rounded-md border border-ink/20 px-3 py-2 text-sm font-medium hover:bg-shell focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass dark:border-shell/30 dark:hover:bg-shell/10"
+            aria-label="Toggle theme"
+          >
+            Theme
+          </button>
+          <a
+            href="#cta"
+            class="rounded-md bg-brass px-4 py-2 text-sm font-semibold text-shell hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brass dark:focus-visible:ring-offset-ink"
+            >Book a consultation</a
+          >
+        </div>
+      </div>
+
+      <nav id="mobile-nav" class="hidden border-t border-ink/10 px-4 py-4 md:hidden dark:border-shell/20" aria-label="Mobile navigation">
+        <div class="flex flex-col gap-3">
+          <a class="rounded-md px-3 py-2 hover:bg-shell focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass dark:hover:bg-shell/10" href="#services">Services</a>
+          <a class="rounded-md px-3 py-2 hover:bg-shell focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass dark:hover:bg-shell/10" href="#process">Process</a>
+          <a class="rounded-md px-3 py-2 hover:bg-shell focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass dark:hover:bg-shell/10" href="#about">About</a>
+          <a class="rounded-md px-3 py-2 hover:bg-shell focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass dark:hover:bg-shell/10" href="#contact">Contact</a>
+          <a href="#cta" class="mt-2 rounded-md bg-brass px-4 py-2 text-center font-semibold text-shell focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass">Book a consultation</a>
+          <button id="theme-toggle-mobile" type="button" class="rounded-md border border-ink/20 px-4 py-2 text-left dark:border-shell/30">Toggle theme</button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="relative overflow-hidden border-b border-ink/10 py-20 sm:py-24 lg:py-28 dark:border-shell/20">
+        <div class="absolute inset-0 -z-10 opacity-40" aria-hidden="true">
+          <div class="mx-auto h-full max-w-7xl bg-[linear-gradient(to_right,rgba(27,42,60,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(27,42,60,0.06)_1px,transparent_1px)] bg-[size:42px_42px]"></div>
+        </div>
+        <div class="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.2fr_0.8fr] lg:px-8">
+          <div class="space-y-8">
+            <p class="inline-flex items-center rounded-full border border-ink/15 bg-shell px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-ink/80 dark:border-shell/30 dark:bg-shell/10 dark:text-shell/80">
+              Business &amp; Data Consulting
+            </p>
+            <div class="space-y-5">
+              <h1 class="font-display text-4xl leading-tight sm:text-5xl lg:text-6xl">The structure behind your growth.</h1>
+              <p class="max-w-2xl text-lg leading-relaxed text-ink/80 dark:text-shell/80">
+                We help founders and teams diagnose what slows performance, translate insight into decisions, and build execution systems that scale with confidence.
+              </p>
+              <p lang="ar" dir="rtl" class="max-w-2xl text-lg leading-relaxed text-ink/80 dark:text-shell/80">
+                نساعد فرق العمل على فهم جذور التحديات، وتحويل البيانات إلى قرارات واضحة، وبناء منظومة تنفيذ تدعم النمو بثبات.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-4">
+              <a href="#cta" class="rounded-md bg-brass px-6 py-3 text-sm font-semibold text-shell shadow-soft hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass">Start with a diagnosis</a>
+              <a href="#services" class="rounded-md border border-ink/25 px-6 py-3 text-sm font-semibold hover:bg-shell focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass dark:border-shell/40 dark:hover:bg-shell/10">Explore services</a>
+            </div>
+          </div>
+          <aside class="rounded-2xl border border-ink/15 bg-shell p-6 shadow-soft dark:border-shell/30 dark:bg-shell/10">
+            <h2 class="font-display text-2xl">Engagement focus</h2>
+            <ul class="mt-6 space-y-4 text-sm leading-relaxed">
+              <li class="rounded-xl border border-ink/10 bg-parchment p-4 dark:border-shell/20 dark:bg-ink/40">
+                <p class="font-semibold">Diagnosis-first</p>
+                <p class="text-ink/75 dark:text-shell/75">Define root causes before prescribing action.</p>
+              </li>
+              <li class="rounded-xl border border-ink/10 bg-parchment p-4 dark:border-shell/20 dark:bg-ink/40">
+                <p class="font-semibold">Data-informed</p>
+                <p class="text-ink/75 dark:text-shell/75">Use evidence to align teams and priorities.</p>
+              </li>
+              <li class="rounded-xl border border-ink/10 bg-parchment p-4 dark:border-shell/20 dark:bg-ink/40">
+                <p class="font-semibold">Implementation-focused</p>
+                <p class="text-ink/75 dark:text-shell/75">Build practical plans and execution rhythms.</p>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="border-b border-ink/10 bg-shell py-12 dark:border-shell/20 dark:bg-shell/10">
+        <div class="mx-auto grid max-w-7xl gap-4 px-4 sm:px-6 md:grid-cols-3 lg:px-8">
+          <article class="rounded-xl border border-ink/10 bg-parchment p-5 dark:border-shell/20 dark:bg-ink/50">
+            <h3 class="font-display text-xl">Structured diagnosis</h3>
+            <p class="mt-2 text-sm text-ink/75 dark:text-shell/75">We begin with a clear view of constraints, capabilities, and opportunities.</p>
+          </article>
+          <article class="rounded-xl border border-ink/10 bg-parchment p-5 dark:border-shell/20 dark:bg-ink/50">
+            <h3 class="font-display text-xl">Aligned decisions</h3>
+            <p class="mt-2 text-sm text-ink/75 dark:text-shell/75">Evidence-led analysis turns ambiguity into focused decisions.</p>
+          </article>
+          <article class="rounded-xl border border-ink/10 bg-parchment p-5 dark:border-shell/20 dark:bg-ink/50">
+            <h3 class="font-display text-xl">Execution discipline</h3>
+            <p class="mt-2 text-sm text-ink/75 dark:text-shell/75">Action plans connect strategy, operations, and measurable progress.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="services" class="py-20 sm:py-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-10 max-w-2xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-brass">Services</p>
+            <h2 class="mt-3 font-display text-3xl sm:text-4xl">Consulting pillars built for growth-stage clarity</h2>
+          </div>
+          <div class="grid gap-6 lg:grid-cols-3">
+            <article class="group rounded-2xl border-2 border-brass bg-shell p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lg focus-within:-translate-y-1 dark:bg-shell/10">
+              <p class="inline-flex rounded-full bg-brass/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-brass">Recommended start</p>
+              <h3 class="mt-4 font-display text-2xl">Data &amp; Business Performance</h3>
+              <p class="mt-3 text-sm text-ink/80 dark:text-shell/80">Clarify performance drivers, KPIs, and reporting for better strategic decisions.</p>
+              <ul class="mt-4 space-y-2 text-sm">
+                <li>• KPI architecture and governance</li>
+                <li>• Dashboard and reporting design</li>
+                <li>• Decision cadence optimization</li>
+              </ul>
+            </article>
+            <article class="group rounded-2xl border border-ink/15 bg-shell p-6 transition hover:-translate-y-1 hover:shadow-soft focus-within:-translate-y-1 dark:border-shell/25 dark:bg-shell/10">
+              <h3 class="font-display text-2xl">Operations &amp; Organization</h3>
+              <p class="mt-3 text-sm text-ink/80 dark:text-shell/80">Design operating models, team workflows, and accountability structures that scale.</p>
+              <ul class="mt-4 space-y-2 text-sm">
+                <li>• Process redesign and mapping</li>
+                <li>• Role clarity and team interfaces</li>
+                <li>• Operating rhythm implementation</li>
+              </ul>
+            </article>
+            <article class="group rounded-2xl border border-ink/15 bg-shell p-6 transition hover:-translate-y-1 hover:shadow-soft focus-within:-translate-y-1 dark:border-shell/25 dark:bg-shell/10">
+              <h3 class="font-display text-2xl">Business &amp; Strategy</h3>
+              <p class="mt-3 text-sm text-ink/80 dark:text-shell/80">Translate strategic priorities into practical initiatives and execution pathways.</p>
+              <ul class="mt-4 space-y-2 text-sm">
+                <li>• Strategic review and prioritization</li>
+                <li>• Initiative planning and sequencing</li>
+                <li>• Leadership decision support</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="border-y border-ink/10 bg-shell py-20 dark:border-shell/20 dark:bg-shell/10">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-10 max-w-2xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-brass">Process</p>
+            <h2 class="mt-3 font-display text-3xl sm:text-4xl">An 8-step path from diagnosis to lasting follow-through</h2>
+          </div>
+          <ol class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <li class="rounded-xl border border-ink/10 bg-parchment p-5 dark:border-shell/25 dark:bg-ink/50"><span class="text-xs font-semibold uppercase tracking-[0.15em] text-brass">01</span><p class="mt-2 font-semibold">Discovery call</p></li>
+            <li class="rounded-xl border border-ink/10 bg-parchment p-5 dark:border-shell/25 dark:bg-ink/50"><span class="text-xs font-semibold uppercase tracking-[0.15em] text-brass">02</span><p class="mt-2 font-semibold">Diagnosis</p></li>
+            <li class="rounded-xl border border-ink/10 bg-parchment p-5 dark:border-shell/25 dark:bg-ink/50"><span class="text-xs font-semibold uppercase tracking-[0.15em] text-brass">03</span><p class="mt-2 font-semibold">Data gathering</p></li>
+            <li class="rounded-xl border border-ink/10 bg-parchment p-5 dark:border-shell/25 dark:bg-ink/50"><span class="text-xs font-semibold uppercase tracking-[0.15em] text-brass">04</span><p class="mt-2 font-semibold">Analysis</p></li>
+            <li class="rounded-xl border border-ink/10 bg-parchment p-5 dark:border-shell/25 dark:bg-ink/50"><span class="text-xs font-semibold uppercase tracking-[0.15em] text-brass">05</span><p class="mt-2 font-semibold">Recommendations</p></li>
+            <li class="rounded-xl border border-ink/10 bg-parchment p-5 dark:border-shell/25 dark:bg-ink/50"><span class="text-xs font-semibold uppercase tracking-[0.15em] text-brass">06</span><p class="mt-2 font-semibold">Action plan</p></li>
+            <li class="rounded-xl border border-ink/10 bg-parchment p-5 dark:border-shell/25 dark:bg-ink/50"><span class="text-xs font-semibold uppercase tracking-[0.15em] text-brass">07</span><p class="mt-2 font-semibold">Implementation</p></li>
+            <li class="rounded-xl border border-ink/10 bg-parchment p-5 dark:border-shell/25 dark:bg-ink/50"><span class="text-xs font-semibold uppercase tracking-[0.15em] text-brass">08</span><p class="mt-2 font-semibold">Follow-up</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="about" class="py-20 sm:py-24">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-brass">About</p>
+            <h2 class="mt-3 font-display text-3xl sm:text-4xl">A core team with specialist depth when needed</h2>
+            <p class="mt-5 text-base leading-relaxed text-ink/80 dark:text-shell/80">
+              Bunyah’s core team leads every engagement directly—from problem framing through implementation. We collaborate with specialist partners where domain depth is required, while preserving one accountable consulting lead and one integrated delivery path.
+            </p>
+          </div>
+          <div class="rounded-2xl border border-ink/15 bg-shell p-6 shadow-soft dark:border-shell/25 dark:bg-shell/10">
+            <h3 class="font-display text-2xl">How we work</h3>
+            <dl class="mt-6 space-y-4 text-sm">
+              <div>
+                <dt class="font-semibold">Core team</dt>
+                <dd class="text-ink/75 dark:text-shell/75">Diagnosis, analysis, strategy synthesis, and implementation leadership.</dd>
+              </div>
+              <div>
+                <dt class="font-semibold">Specialist partners</dt>
+                <dd class="text-ink/75 dark:text-shell/75">Activated selectively for advanced analytics, technical integrations, or sector-specific requirements.</dd>
+              </div>
+              <div>
+                <dt class="font-semibold">Client collaboration</dt>
+                <dd class="text-ink/75 dark:text-shell/75">Joint working sessions, practical artifacts, and clear owner-level actions.</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" class="border-y border-ink/10 bg-shell py-20 dark:border-shell/20 dark:bg-shell/10">
+        <div id="contact" class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+          <div class="space-y-5">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-brass">Contact</p>
+            <h2 class="font-display text-3xl sm:text-4xl">Let’s turn diagnosis into direction.</h2>
+            <p class="text-base leading-relaxed text-ink/80 dark:text-shell/80">
+              Share your current challenge and we’ll suggest the best starting scope. Prefer email? Reach us directly at
+              <a class="font-semibold underline decoration-brass underline-offset-4" href="mailto:bunyah.co@gmail.com">bunyah.co@gmail.com</a>.
+            </p>
+            <ul class="space-y-2 text-sm text-ink/80 dark:text-shell/80">
+              <li>• Cairo, Egypt</li>
+              <li>• Diagnosis-first engagements</li>
+              <li>• Flexible support from strategy to implementation</li>
+            </ul>
+          </div>
+
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/mdeknrwq"
+            method="POST"
+            class="rounded-2xl border border-ink/15 bg-parchment p-6 shadow-soft dark:border-shell/25 dark:bg-ink/50"
+            novalidate
+            aria-describedby="form-status"
+          >
+            <div class="space-y-4">
+              <div>
+                <label for="name" class="mb-2 block text-sm font-semibold">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                  class="w-full rounded-lg border border-ink/20 bg-shell px-4 py-3 text-base placeholder:text-ink/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass dark:border-shell/30 dark:bg-ink"
+                />
+              </div>
+              <div>
+                <label for="email" class="mb-2 block text-sm font-semibold">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  class="w-full rounded-lg border border-ink/20 bg-shell px-4 py-3 text-base placeholder:text-ink/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass dark:border-shell/30 dark:bg-ink"
+                />
+              </div>
+              <div>
+                <label for="message" class="mb-2 block text-sm font-semibold">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  class="w-full rounded-lg border border-ink/20 bg-shell px-4 py-3 text-base placeholder:text-ink/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass dark:border-shell/30 dark:bg-ink"
+                ></textarea>
+              </div>
+
+              <div class="hidden" aria-hidden="true">
+                <label for="bot-field">Leave this field empty</label>
+                <input id="bot-field" name="bot-field" type="text" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <button
+                id="submit-button"
+                type="submit"
+                class="inline-flex items-center justify-center rounded-md bg-brass px-5 py-3 text-sm font-semibold text-shell hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass"
+              >
+                Send message
+              </button>
+              <p id="form-status" class="text-sm" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-ink/10 py-10 dark:border-shell/20">
+      <div class="mx-auto flex max-w-7xl flex-col gap-6 px-4 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
+        <div>
+          <p class="font-display text-2xl">Bunyah</p>
+          <p class="text-sm text-ink/75 dark:text-shell/75">Business &amp; Data Consulting · Cairo, Egypt</p>
+          <a href="mailto:bunyah.co@gmail.com" class="text-sm underline decoration-brass underline-offset-4">bunyah.co@gmail.com</a>
+        </div>
+        <nav class="flex flex-wrap gap-4 text-sm" aria-label="Footer">
+          <a href="#services" class="hover:text-brass">Services</a>
+          <a href="#process" class="hover:text-brass">Process</a>
+          <a href="#about" class="hover:text-brass">About</a>
+          <a href="#contact" class="hover:text-brass">Contact</a>
+        </nav>
+        <p class="text-sm text-ink/70 dark:text-shell/70">© <span id="current-year"></span> Bunyah. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <section
+      id="cookie-consent"
+      class="fixed inset-x-4 bottom-4 z-[55] hidden max-w-3xl rounded-2xl border border-ink/20 bg-shell p-4 shadow-soft sm:inset-x-6 dark:border-shell/25 dark:bg-ink"
+      role="dialog"
+      aria-live="polite"
+      aria-label="Cookie consent"
+    >
+      <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <p class="text-sm text-ink/80 dark:text-shell/80">
+          We use analytics cookies to understand site usage and improve the experience. You can accept or decline analytics.
+        </p>
+        <div class="flex shrink-0 gap-2">
+          <button
+            id="decline-consent"
+            type="button"
+            class="rounded-md border border-ink/20 px-4 py-2 text-sm font-semibold hover:bg-parchment focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass dark:border-shell/30 dark:hover:bg-shell/10"
+          >
+            Decline
+          </button>
+          <button
+            id="accept-consent"
+            type="button"
+            class="rounded-md bg-brass px-4 py-2 text-sm font-semibold text-shell hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass"
+          >
+            Accept analytics
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      (function () {
+        const consentKey = 'bunyah_cookie_consent';
+        const themeKey = 'bunyah_theme';
+        const html = document.documentElement;
+        const currentYear = document.getElementById('current-year');
+        const consentBanner = document.getElementById('cookie-consent');
+        const acceptBtn = document.getElementById('accept-consent');
+        const declineBtn = document.getElementById('decline-consent');
+        const mobileMenuBtn = document.getElementById('mobile-menu-button');
+        const mobileNav = document.getElementById('mobile-nav');
+        const themeButtons = [
+          document.getElementById('theme-toggle'),
+          document.getElementById('theme-toggle-mobile')
+        ].filter(Boolean);
+
+        let gaLoaded = false;
+
+        function loadGA() {
+          if (gaLoaded) return;
+          gaLoaded = true;
+          const script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX';
+          document.head.appendChild(script);
+
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = function gtag() {
+            window.dataLayer.push(arguments);
+          };
+
+          window.gtag('js', new Date());
+          window.gtag('config', 'G-XXXXXXX');
+        }
+
+        function applyTheme(theme) {
+          if (theme === 'dark') {
+            html.classList.add('dark');
+          } else {
+            html.classList.remove('dark');
+          }
+        }
+
+        function setConsent(value) {
+          localStorage.setItem(consentKey, value);
+          consentBanner.classList.add('hidden');
+          if (value === 'accepted') {
+            loadGA();
+          }
+        }
+
+        if (currentYear) {
+          currentYear.textContent = String(new Date().getFullYear());
+        }
+
+        const savedTheme = localStorage.getItem(themeKey);
+        if (savedTheme) {
+          applyTheme(savedTheme);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          applyTheme('dark');
+        }
+
+        themeButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            const nextTheme = html.classList.contains('dark') ? 'light' : 'dark';
+            localStorage.setItem(themeKey, nextTheme);
+            applyTheme(nextTheme);
+          });
+        });
+
+        if (mobileMenuBtn && mobileNav) {
+          mobileMenuBtn.addEventListener('click', () => {
+            const expanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+            mobileMenuBtn.setAttribute('aria-expanded', String(!expanded));
+            mobileNav.classList.toggle('hidden');
+          });
+        }
+
+        const consent = localStorage.getItem(consentKey);
+        if (consent === 'accepted') {
+          loadGA();
+        } else if (!consent) {
+          consentBanner.classList.remove('hidden');
+        }
+
+        acceptBtn?.addEventListener('click', () => setConsent('accepted'));
+        declineBtn?.addEventListener('click', () => setConsent('declined'));
+
+        const form = document.getElementById('contact-form');
+        const submitButton = document.getElementById('submit-button');
+        const status = document.getElementById('form-status');
+
+        if (form && submitButton && status && window.fetch) {
+          form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            if (!form.checkValidity()) {
+              form.reportValidity();
+              return;
+            }
+
+            submitButton.disabled = true;
+            submitButton.setAttribute('aria-busy', 'true');
+            submitButton.textContent = 'Sending...';
+            status.className = 'text-sm text-ink/80 dark:text-shell/80';
+            status.textContent = 'Submitting your message...';
+
+            try {
+              const response = await fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { Accept: 'application/json' }
+              });
+
+              if (response.ok) {
+                form.reset();
+                status.className = 'text-sm text-green-700 dark:text-green-300';
+                status.textContent = 'Thank you. Your message was sent successfully.';
+              } else {
+                throw new Error('Submission failed');
+              }
+            } catch (error) {
+              status.className = 'text-sm text-red-700 dark:text-red-300';
+              status.innerHTML = 'Something went wrong. Please try again or email <a class="underline" href="mailto:bunyah.co@gmail.com">bunyah.co@gmail.com</a>.';
+            } finally {
+              submitButton.disabled = false;
+              submitButton.removeAttribute('aria-busy');
+              submitButton.textContent = 'Send message';
+            }
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
